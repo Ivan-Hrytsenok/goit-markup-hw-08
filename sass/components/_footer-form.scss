@@ -1,0 +1,66 @@
+.mailing-list-plea {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $whiteColor;
+}
+.mailing-list {
+  text-align: center;
+}
+.mailing-list-form {
+  // display: flex;
+}
+.mailing-list-wrapper input {
+  width: 100%;
+  height: 50px;
+  padding-left: 16px;
+  // margin-right: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  background-color: $heroFooterBackgroundColor;
+  color: $whiteColor;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.mailing-list-form input:focus {
+  outline: 1px solid rgba(255, 255, 255, 0.3);
+}
+.mailing-list-wrapper input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.btn-mailing {
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $whiteColor;
+
+  width: 200px;
+  height: 50px;
+  padding: 10px 62px 10px 28px;
+
+  background: $accentTextColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.icon-mailing-list {
+  position: absolute;
+  top: 50%;
+  left: 69%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+  margin-right: 28px;
+}
+.btn-mailing:active {
+  background-color: $activeHeroButton;
+}

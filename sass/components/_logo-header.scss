@@ -1,0 +1,23 @@
+.logo {
+  font-family: $logoFont;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  color: $logoColor;
+  text-decoration: none;
+  display: block;
+  width: 134px;
+
+  @include tablet {
+    margin-right: 87px;
+  }
+
+  @include desktop {
+    margin-right: 92px;
+  }
+
+  &__first-word {
+    color: $accentTextColor;
+  }
+}

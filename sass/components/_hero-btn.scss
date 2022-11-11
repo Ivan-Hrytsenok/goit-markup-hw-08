@@ -1,0 +1,27 @@
+.hero-btn {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.89;
+  letter-spacing: 0.06em;
+
+  color: $whiteColor;
+  background-color: $accentTextColor;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  padding: 10px 24px;
+  display: inline-block;
+  min-width: 200px;
+  margin-bottom: 118px;
+
+  @include desktop {
+    min-width: 216px;
+    padding: 10px 32px;
+    margin-bottom: 200px;
+  }
+}
+.hero-btn:active {
+  background-color: $activeHeroButton;
+}
