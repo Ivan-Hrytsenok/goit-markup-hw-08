@@ -646,13 +646,17 @@ body {
 
 .footer {
   background-color: #2f303a;
-}
-
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .address {
   margin-bottom: 8px;
 }
@@ -668,6 +672,7 @@ body {
   .contacts-footer-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -696,6 +701,12 @@ body {
   flex-direction: column;
   margin-top: 60px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .social-network-footer {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .social-network-footer-list {
@@ -741,26 +752,38 @@ body {
   color: #ffffff;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .join {
+    display: flex;
+  }
+}
 
 .container-logo-adress {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .container-logo-adress {
-    display: block;
-  }
-}
 
-.logo-footer-reset {
-  margin-top: 0;
-  margin-bottom: 0;
+.logo-footer-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  width: 134px;
 }
 
 .logo-footer {
   text-align: center;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .logo-footer {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .logo-second-word {
@@ -774,21 +797,52 @@ body {
   color: #ffffff;
 }
 
-.mailing-list {
-  text-align: center;
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .mailing-list {
+    margin-top: 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing-list-form {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mailing-list-wrapper {
+    margin-top: 20px;
+  }
 }
 
 .mailing-list-wrapper input {
   width: 100%;
   height: 50px;
   padding-left: 16px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   background-color: #2f303a;
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .mailing-list-wrapper input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mailing-list-wrapper input {
+    display: flex;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing-list-wrapper input {
+    max-width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .mailing-list-form input:focus {

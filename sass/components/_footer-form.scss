@@ -6,24 +6,45 @@
   color: $whiteColor;
 }
 .mailing-list {
-  text-align: center;
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    margin-top: 60px;
+    text-align: center;
+  }
 }
+
 .mailing-list-form {
-  // display: flex;
+  @include desktop {
+    display: flex;
+  }
+}
+.mailing-list-wrapper {
+  @include desktop {
+    margin-top: 20px;
+  }
 }
 .mailing-list-wrapper input {
   width: 100%;
   height: 50px;
   padding-left: 16px;
-  // margin-right: 12px;
-  margin-top: 20px;
-  margin-bottom: 20px;
 
   background-color: $heroFooterBackgroundColor;
   color: $whiteColor;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @include tablet {
+    display: flex;
+    width: 450px;
+  }
+  @include desktop {
+    max-width: 358px;
+    margin-right: 12px;
+  }
 }
 .mailing-list-form input:focus {
   outline: 1px solid rgba(255, 255, 255, 0.3);
