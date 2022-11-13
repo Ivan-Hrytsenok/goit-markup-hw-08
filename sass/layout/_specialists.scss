@@ -33,7 +33,7 @@
   border-radius: 0px 0px 4px 4px;
   width: 450px;
 
-   @include tablet {
+  @include tablet {
     width: calc((100% - 30px) / 2);
   }
 
@@ -52,15 +52,29 @@
   text-align: center;
 }
 .item-wrapper {
-  padding-top: 30px;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 .social-network-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 16px 32px 30px 32px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  margin-left: 122px;
+  margin-right: 122px;
+
+  @include tablet {
+    margin-left: 74px;
+    margin-right: 74px;
+  }
+
+  @include desktop {
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 30px;
+  }
 }
 .social-network-wrapp {
   width: 44px;

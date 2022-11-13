@@ -148,6 +148,10 @@
             <li class="item">
               <div class="speciality-wrapper">
                 <img
+                  srcset="
+                    ./imeges/imeges-speciality/development.jpg    1x,
+                    ./imeges/imeges-speciality/development-2x.jpg 2x
+                  "
                   src="./imeges/imeges-speciality/development.jpg"
                   alt="Послуга розробки"
                   width="370"
@@ -158,6 +162,10 @@
             <li class="item">
               <div class="speciality-wrapper">
                 <img
+                  srcset="
+                    ./imeges/imeges-speciality/mobile-application.jpg    1x,
+                    ./imeges/imeges-speciality/mobile-application-2x.jpg 2x
+                  "
                   src="./imeges/imeges-speciality/mobile-application.jpg"
                   alt="Послуга розробки мобільних застусунків"
                   width="370"
@@ -168,6 +176,10 @@
             <li class="item">
               <div class="speciality-wrapper">
                 <img
+                  srcset="
+                    ./imeges/imeges-speciality/web-design.jpg    1x,
+                    ./imeges/imeges-speciality/web-design-2x.jpg 2x
+                  "
                   src="./imeges/imeges-speciality/web-design.jpg"
                   alt="Послуги веб дизайну"
                   width="370"
@@ -185,12 +197,34 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="specialists-list list container">
           <li class="specialist-card">
-            <img
-              class="photo"
-              src="./imeges/imeges-specialist/igor-demynenko-img-mobile.jpg"
-              alt="Чоловік в червоній сорочці в окулярах"
-              width="270"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./imeges/imeges-specialist/igor-demynenko-img-desktop.jpg    1x,
+                  ./imeges/imeges-specialist/igor-demynenko-img-desktop-2x.jpg 2x
+                "
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./imeges/imeges-specialist/igor-demynenko-img-tablet.jpg    1x,
+                  ./imeges/imeges-specialist/igor-demynenko-img-tablet-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./imeges/imeges-specialist/igor-demynenko-img-mobile.jpg    1x,
+                  ./imeges/imeges-specialist/igor-demynenko-img-mobile-2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                class="photo"
+                src="./imeges/imeges-specialist/igor-demynenko-img-mobile.jpg"
+                alt="Чоловік в червоній сорочці в окулярах"
+              />
+            </picture>
             <div class="item-wrapper">
               <h3 class="specialists-title">Ігор Дем'яненко</h3>
               <p class="specialist-profession" lang="en">Product Designer</p>
@@ -237,12 +271,34 @@
             </div>
           </li>
           <li class="specialist-card">
-            <img
-              class="photo"
-              src="./imeges/imeges-specialist/olga-repina-img-mobile.jpg"
-              alt="Жінка в чорному піджаку в окулярах"
-              width="270"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./imeges/imeges-specialist/olga-repina-img-desktop.jpg    1x,
+                  ./imeges/imeges-specialist/olga-repina-img-desktop-2x.jpg 2x
+                "
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./imeges/imeges-specialist/olga-repina-img-tablet.jpg    1x,
+                  ./imeges/imeges-specialist/olga-repina-img-tablet-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./imeges/imeges-specialist/olga-repina-img-mobile.jpg    1x,
+                  ./imeges/imeges-specialist/olga-repina-img-mobile-2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                class="photo"
+                src="./imeges/imeges-specialist/olga-repina-img-mobile.jpg"
+                alt="Жінка в чорному піджаку в окулярах"
+              />
+            </picture>
             <div class="item-wrapper">
               <h3 class="specialists-title">Ольга Рєпіна</h3>
               <p class="specialist-profession" lang="en">Frontend Developer</p>
@@ -289,12 +345,34 @@
             </div>
           </li>
           <li class="specialist-card">
-            <img
-              class="photo"
-              src="./imeges/imeges-specialist/mykola-tarasov-img-mobile.jpg"
-              alt="Чоловік в голубій сорочці"
-              width="270"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./imeges/imeges-specialist/mykola-tarasov-img-desktop.jpg    1x,
+                  ./imeges/imeges-specialist/mykola-tarasov-img-desktop-2x.jpg 2x
+                "
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./imeges/imeges-specialist/mykola-tarasov-img-tablet.jpg    1x,
+                  ./imeges/imeges-specialist/mykola-tarasov-img-tablet-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./imeges/imeges-specialist/mykola-tarasov-img-mobile.jpg    1x,
+                  ./imeges/imeges-specialist/mykola-tarasov-img-mobile-2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                class="photo"
+                src="./imeges/imeges-specialist/mykola-tarasov-img-mobile.jpg"
+                alt="Чоловік в голубій сорочці"
+              />
+            </picture>
             <div class="item-wrapper">
               <h3 class="specialists-title">Микола Тарасов</h3>
               <p class="specialist-profession" lang="en">Marketing</p>
@@ -341,12 +419,34 @@
             </div>
           </li>
           <li class="specialist-card">
-            <img
-              class="photo"
-              src="./imeges/imeges-specialist/myhailo-yermakov-img-mobile.jpg"
-              alt="Чоловік в черній футболці в окулярах"
-              width="270"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./imeges/imeges-specialist/myhailo-yermakov-img-desktop.jpg    1x,
+                  ./imeges/imeges-specialist/myhailo-yermakov-img-desktop-2x.jpg 2x
+                "
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./imeges/imeges-specialist/myhailo-yermakov-img-tablet.jpg    1x,
+                  ./imeges/imeges-specialist/myhailo-yermakov-img-tablet-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./imeges/imeges-specialist/myhailo-yermakov-img-mobile.jpg    1x,
+                  ./imeges/imeges-specialist/myhailo-yermakov-img-mobile-2x.jpg 2x
+                "
+                media="(max-width:767px)"
+              />
+              <img
+                class="photo"
+                src="./imeges/imeges-specialist/myhailo-yermakov-img-mobile.jpg"
+                alt="Чоловік в черній футболці в окулярах"
+              />
+            </picture>
             <div class="item-wrapper">
               <h3 class="specialists-title">Михайло Єрмаков</h3>
               <p class="specialist-profession" lang="en">UI Designer</p>
