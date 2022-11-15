@@ -22,7 +22,7 @@ ul {
   text-decoration: none;
 }
 
-.open-mob-menu {
+.btn-open-menu {
   width: 40px;
   height: 40px;
   border: none;
@@ -30,6 +30,12 @@ ul {
   position: absolute;
   top: 10px;
   right: 15px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .btn-open-menu {
+    display: none;
+  }
 }
 
 .icon-open-mob-menu {
@@ -42,7 +48,11 @@ ul {
   display: inline-block;
 }
 
-.close-mob-menu {
+.btn-open-menu .icon-open-mob-menu:hover {
+  fill: #2196f3;
+}
+
+.btn-close-menu {
   width: 40px;
   height: 40px;
   border: none;
@@ -50,6 +60,7 @@ ul {
   position: absolute;
   top: 10px;
   right: 15px;
+  cursor: pointer;
 }
 
 .icon-close-mob-menu {
@@ -62,16 +73,27 @@ ul {
   display: inline-block;
 }
 
+.btn-close-menu .icon-close-mob-menu:hover {
+  fill: #2196f3;
+}
+
 .mob-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
+  right: 0;
   background-color: #ffffff;
   width: 100vw;
   height: 100vh;
-  z-index: 9;
+  z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  overflow: auto;
+}
+
+.mob-nav__list {
+  margin-top: 14px;
+  margin-bottom: 302px;
 }
 
 .mob-nav__link {
@@ -82,8 +104,70 @@ ul {
   color: #212121;
 }
 
+.mob-nav__link:hover {
+  color: #2196f3;
+}
+
+.mob-nav__link__current {
+  color: #2196f3;
+}
+
 .mob-nav__item:not(:last-child) {
+  margin-bottom: 46px;
+}
+
+.mob-contacts__list {
+  margin-bottom: 64px;
+}
+
+.mob-contacts__link-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-contacts__link-mob {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mob-contacts__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mob-soc__list {
+  display: flex;
+}
+
+.mob-soc__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+@media screen and (min-width: 480px) {
+  .mob-soc__link {
+    font-size: 18px;
+  }
+}
+
+.mob-soc__item::after {
+  content: "";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.mob-soc__item:last-child::after {
+  content: "";
+  border: none;
 }
 
 .visually-hidden {
