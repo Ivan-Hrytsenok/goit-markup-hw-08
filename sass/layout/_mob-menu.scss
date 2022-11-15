@@ -1,3 +1,58 @@
 .open-mob-menu {
-    margin-left:auto;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: $whiteColor;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.icon-open-mob-menu {
+  width: 24px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+.close-mob-menu {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: $whiteColor;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.icon-close-mob-menu {
+  width: 24px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+.mob-menu {
+  position: absolute;
+  top: 0;
+  background-color: $whiteColor;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+}
+
+.mob-nav__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17px;
+  letter-spacing: 0.02em;
+  color: $titleTextColor;
+}
+.mob-nav__item:not(:last-child) {
+    margin-bottom: 32px;
 }
